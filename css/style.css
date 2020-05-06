@@ -1,0 +1,205 @@
+/* DEBUGG - start rules*/
+debug {}
+  .debug .container {
+    background-color: #16D893;
+    border: 1px solid blue;
+  }
+  .debug [class*="col-"] {
+    background-color: yellow;
+    border: 1px solid red;
+    height: 400px;
+  }
+/* DEBUGG - end rules */
+
+/* GENERAL RULES - start */
+general-rules {}
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+  }
+
+  nav ul{
+    padding-left: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* GENERAL RULES - end */
+
+/* COMPONENTS - start rules */
+components {}
+  /* Jumbo */
+  .ms_jumbo {
+    background-image: url(../img/bg-home-1-d54581d7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  /* Banner */
+  .ms_banner {
+    color: black;
+  }
+  .ms_banner h1 {
+    font-size: 60px;
+  }
+  .ms_banner p {
+    font-size: 20px;
+  }
+
+  /* Account box */
+  .ms_account-box {
+    background-color: white;
+    border-radius: 5px;
+    height: 400px;
+    padding: 30px 40px;
+  }
+  .ms_title-text {
+    text-align: center;
+  }
+  .ms_title-text h2 {
+    color: #031c4e;
+  }
+  .ms_title-text span {
+    color: #006aff;
+  }
+  .ms_btn-blue {
+    background-color: #579aff;
+    color: white;
+    width: 100%;
+  }
+  .ms_btn-white {
+    background-color: white;
+    color: black;
+    width: 100%;
+    box-shadow: inset 0 0 3px 3px #888;
+  }
+  .ms_btn-white img {
+    height: 20px;
+  }
+  .ms_account-box .ms_terms-text {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .ms_account-box .ms_terms-text a {
+    text-decoration: underline;
+  }
+
+  .ms_redirect-link {
+    text-decoration: none;
+    color: #006aff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+/* COMPONENTS - end rules */
+
+/* HEADER - start rules */
+header {}
+  header
+/* HEADER - end rules */
+
+/* NAVBAR - start rules */
+nav {}
+  nav
+  .ms_navbar {
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+  }
+  .ms_navbar .ms_navbar-toggler {
+    color: blue;
+    display: none;
+  }
+
+  @media all and (min-width: 300px) and (max-width: 991px) {
+    .ms_navbar .ms_navbar-menu-one,
+    .ms_navbar .ms_navbar-menu-two {
+      display: none;
+    }
+    .ms_navbar .ms_navbar-toggler {
+      display: inline-block;
+    }
+  }
+/* NAVBAR - end rules */
+
+/* MAIN - start rules */
+main {}
+  /* Customers */
+  .ms_customers {
+    padding: 30px 0;
+    background-color: #f3f5f9;
+    text-align: center;
+  }
+  .ms_customers h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .ms_customers ul li {
+    float: left;
+  }
+  .ms_customers ul li img {
+    width: 80%;
+  }
+  .ms_logo-list {
+    height: 200px;
+  }
+  .ms_logo-list ul {
+    display: table-row;
+  }
+  .ms_logo-list ul li {
+    width: calc(100% / 6);
+    list-style: none;
+    display: table-cell;
+  }
+  .ms_logo-list ul li img {
+    height: 120px;
+  }
+
+  @media all and (max-width: 767px) {
+    .ms_logo-list {
+      height: 400px;
+    }
+    .ms_logo-list ul li {
+      width: 50%;
+      display: block;
+    }
+  }
+
+/* MAIN - end rules */
+
+/* FOOTER - start rules */
+footer {}
+  footer
+/* FOOTER - end rules */
+
+/* MEDIA QUERY -start rules */
+@media query {}
+  @media all and () {}
+  @media all and (max-width: 767px) {}
+  @media all and (min-width: 768px) and (max-width: 991px) {}
+  @media all and (min-width: 992px) {}
+/* MEDIA QUERY -end rules */
+
+
+/* BOOTSTRAP CLASS - start */
+bootstrap {}       /*  */
+  /* Navbar */
+  .navbar          /* Creates a navigation bar */
+  .navbar-collapse /* Collapses the navbar (hidden and replaced with a menu/hamburger icon on mobile phones and small tablets) */
+
+  /* List */
+  .list-group      /* Creates a bordered list group for <li> elements */
+  .list-inline     /* Places all list items on a single line (horizontal menu) */
+  .list-unstyled   /* Removes all default list-style (bullets, left margin, etc.) styling from a <ul> or <ol> list */
+/* BOOTSTRAP CLASS - end */
