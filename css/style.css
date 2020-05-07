@@ -11,23 +11,25 @@ debug {}
   }
 /* DEBUGG - end rules */
 
+
 /* GENERAL RULES - start */
 general-rules {}
   body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
-  nav ul{
-    padding-left: 0;
-  }
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-  }
-  nav ul li a {
-    text-decoration: none;
-  }
+  nav {}
+    nav ul{
+      padding-left: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+    }
+    nav ul li a {
+      text-decoration: none;
+    }
 
   .clearfix {
     content: "";
@@ -43,6 +45,7 @@ general-rules {}
   }
 /* GENERAL RULES - end */
 
+
 /* COMPONENTS - start rules */
 components {}
   /* Jumbo */
@@ -50,7 +53,8 @@ components {}
     background-image: url(../img/bg-home-1-d54581d7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
+    padding: 100px 0;
   }
   /* Banner */
   .ms_banner {
@@ -58,12 +62,80 @@ components {}
   }
   .ms_banner h1 {
     font-size: 60px;
+    color: white;
   }
   .ms_banner p {
     font-size: 20px;
+    color: #b3c7ff;
   }
 
-  /* Account box */
+  .ms_btn-blue {
+    background-color: #579aff;
+    color: white;
+    width: 100%;
+  }
+  .ms_btn-white {
+    background-color: white;
+    color: black;
+    width: 100%;
+    box-shadow: inset 0 0 3px 3px #888;
+  }
+
+  .ms_redirect-link {
+    text-decoration: none;
+    color: #006aff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .ms_box {
+    padding: 50px 0;
+  }
+  .ms_box .ms_box-text {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .ms_blue-banner {
+    background-color: #0042c0;
+  }
+/* COMPONENTS - end rules */
+
+
+/* HEADER - start rules */
+header {}
+  header
+/* HEADER - end rules */
+
+/* NAVBAR - start rules */
+nav {}
+  nav.ms_navbar {
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+  }
+  .ms_navbar .ms_logo img {
+    width: 100%;
+  }
+  .ms_navbar .ms_navbar-toggler {
+    color: blue;
+    display: none;
+  }
+
+  @media all and (min-width: 300px) and (max-width: 991px) {
+    .ms_navbar .ms_navbar-menu-one,
+    .ms_navbar .ms_navbar-menu-two {
+      display: none;
+    }
+    .ms_navbar .ms_navbar-toggler {
+      display: inline-block;
+    }
+  }
+/* NAVBAR - end rules */
+
+/* MAIN - start rules */
+main {}
+  /* Jumbo - Account box */
   .ms_account-box {
     background-color: white;
     border-radius: 5px;
@@ -79,17 +151,6 @@ components {}
   .ms_title-text span {
     color: #006aff;
   }
-  .ms_btn-blue {
-    background-color: #579aff;
-    color: white;
-    width: 100%;
-  }
-  .ms_btn-white {
-    background-color: white;
-    color: black;
-    width: 100%;
-    box-shadow: inset 0 0 3px 3px #888;
-  }
   .ms_btn-white img {
     height: 20px;
   }
@@ -101,21 +162,49 @@ components {}
     text-decoration: underline;
   }
 
-  .ms_redirect-link {
-    text-decoration: none;
-    color: #006aff;
-    font-size: 16px;
-    font-weight: bold;
+  /* Customers */
+  .ms_customers {
+    padding: 30px 0;
+    background-color: #f3f5f9;
+    text-align: center;
+  }
+  .ms_customers h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .ms_customers ul li {
+    float: left;
+  }
+  .ms_customers ul li img {
+    width: 80%;
+  }
+  .ms_logo-list {
+    height: 200px;
+  }
+  .ms_logo-list ul {
+    display: table-row;
+  }
+  .ms_logo-list ul li {
+    width: calc(100% / 6);
+    list-style: none;
+    display: table-cell;
+  }
+  .ms_logo-list ul li img {
+    height: 120px;
   }
 
+  @media all and (max-width: 767px) {
+    .ms_logo-list {
+      height: 400px;
+    }
+    .ms_logo-list ul li {
+      width: 50%;
+      display: block;
+    }
+  }
+
+
   /* Process */
-  .ms_box {
-    padding: 50px 0;
-  }
-  .ms_box .ms_box-text {
-    text-align: center;
-    padding-bottom: 50px;
-  }
   .ms_box .ms_box-text h2 {
     color: #031c4e;
     font-weight: bold;
@@ -192,9 +281,6 @@ components {}
   }
 
   /* Regions */
-  .ms_blue-banner {
-    background-color: #0042c0;
-  }
   .ms_blue-banner .ms_table-regions {
     color: white;
     margin-bottom: 0;
@@ -231,11 +317,21 @@ components {}
   .ms_reviews {
     background-color: white;
     height: 400px;
+    padding-top: 50px;
   }
-  .ms_reviews .ms_rev-logo {
+  .ms_reviews .ms_rev-logo img {
+    width: 300px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ms_box-card.ms_box-card-reviews {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
-    width: 50%;
-    height: 50px;
   }
 
   /* Banner-two */
@@ -258,85 +354,6 @@ components {}
     width: 200px;
     padding: 10px 10px;
   }
-
-
-
-
-
-/* COMPONENTS - end rules */
-
-/* HEADER - start rules */
-header {}
-  header
-/* HEADER - end rules */
-
-/* NAVBAR - start rules */
-nav {}
-  nav
-  .ms_navbar {
-    height: 70px;
-    line-height: 70px;
-    background-color: white;
-  }
-  .ms_navbar .ms_navbar-toggler {
-    color: blue;
-    display: none;
-  }
-
-  @media all and (min-width: 300px) and (max-width: 991px) {
-    .ms_navbar .ms_navbar-menu-one,
-    .ms_navbar .ms_navbar-menu-two {
-      display: none;
-    }
-    .ms_navbar .ms_navbar-toggler {
-      display: inline-block;
-    }
-  }
-/* NAVBAR - end rules */
-
-/* MAIN - start rules */
-main {}
-  /* Customers */
-  .ms_customers {
-    padding: 30px 0;
-    background-color: #f3f5f9;
-    text-align: center;
-  }
-  .ms_customers h3 {
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  .ms_customers ul li {
-    float: left;
-  }
-  .ms_customers ul li img {
-    width: 80%;
-  }
-  .ms_logo-list {
-    height: 200px;
-  }
-  .ms_logo-list ul {
-    display: table-row;
-  }
-  .ms_logo-list ul li {
-    width: calc(100% / 6);
-    list-style: none;
-    display: table-cell;
-  }
-  .ms_logo-list ul li img {
-    height: 120px;
-  }
-
-  @media all and (max-width: 767px) {
-    .ms_logo-list {
-      height: 400px;
-    }
-    .ms_logo-list ul li {
-      width: 50%;
-      display: block;
-    }
-  }
-
 /* MAIN - end rules */
 
 /* FOOTER - start rules */
@@ -369,24 +386,3 @@ footer {}
     font-weight: bold;
   }
 /* FOOTER - end rules */
-
-/* MEDIA QUERY -start rules */
-@media query {}
-  @media all and () {}
-  @media all and (max-width: 767px) {}
-  @media all and (min-width: 768px) and (max-width: 991px) {}
-  @media all and (min-width: 992px) {}
-/* MEDIA QUERY -end rules */
-
-
-/* BOOTSTRAP CLASS - start */
-bootstrap {}       /*  */
-  /* Navbar */
-  .navbar          /* Creates a navigation bar */
-  .navbar-collapse /* Collapses the navbar (hidden and replaced with a menu/hamburger icon on mobile phones and small tablets) */
-
-  /* List */
-  .list-group      /* Creates a bordered list group for <li> elements */
-  .list-inline     /* Places all list items on a single line (horizontal menu) */
-  .list-unstyled   /* Removes all default list-style (bullets, left margin, etc.) styling from a <ul> or <ol> list */
-/* BOOTSTRAP CLASS - end */

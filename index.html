@@ -14,18 +14,18 @@
   <body class="debu">
 
     <!-- Header - inizio -->
-    <!-- <header>
+    <header>
 
-      <nav class="navbar navbar-fixed-top ms_navbar">
+      <nav id="ms_navbar" class="navbar navbar-fixed-top ms_navbar">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-2">
               <div class="ms_logo">
-                Logo
+                <img src="img/logo.png" alt="DigitalOcean-Logo">
               </div>
             </div>
 
-            <div class="col-xs-12 col-md-12 col-lg-5">
+            <div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-1">
               <ul class="ms_navbar-menu-one">
                 <li><a href="#">Products</a> <i class="fas fa-angle-down"></i></li>
                 <li><a href="#">Customers</a></li>
@@ -51,13 +51,13 @@
         </div>
       </nav>
 
-    </header> -->
+    </header>
     <!-- Header - fine -->
 
     <!-- Main - inizio -->
     <main>
       <!-- Jumbo - inizio sezione -->
-      <section class="ms_jumbo">
+      <section id="ms_jumbo" class="ms_jumbo">
         <div class="container">
           <div class="row">
             <!-- Banner -->
@@ -90,38 +90,7 @@
       <!-- Jumbo - fine sezione -->
 
       <!-- Customers - inizio sezione -->
-      <!-- <section class="ms_customers">
-        <h3>Innovative business trust Digital Ocean</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-6 col-md-2 col-lg-2">
-              <img src="img/docker-bab60eeb.png" alt="docker-logo">
-            </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
-              <img src="img/gitlab-166e2067.png" alt="gitlab-logo">
-            </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
-              <img src="img/slack-e20293da.png" alt="slack-logo">
-            </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
-              <img src="img/hashicorp-4431df79.png" alt="hashicorp-logo">
-            </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
-              <img src="img/hashicorp-4431df79.png" alt="hashicorp-logo">
-            </div>
-            <div class="col-xs-6 col-md-2 col-lg-2">
-              <img src="img/splunk-06b17d75.png" alt="splunk-logo">
-            </div>
-          </div>
-          <div class="ms_redirect-link">
-            <a href="#">View customer stories ></a>
-          </div>
-        </div>
-      </section> -->
-      <!-- Customers - fine sezione -->
-
-      <!-- Customers - inizio sezione -->
-      <section class="ms_customers">
+      <section id="ms_customers" class="ms_customers">
         <h3>Innovative business trust Digital Ocean</h3>
         <div class="container">
           <div class="ms_logo-list">
@@ -154,7 +123,7 @@
       <!-- Customers - fine sezione -->
 
       <!-- Process - inizio sezione -->
-      <section class="ms_box">
+      <section id="ms_box" class="ms_box">
         <div class="container ms_box-text">
           <h2>Deploy and scale seamlessly</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -212,7 +181,7 @@
       <!-- Process - fine sezione -->
 
       <!-- Panel-dev Carousel - inizio -->
-      <section class="ms_box ms_dev-panel">
+      <section id="ms_dev-panel" class="ms_box ms_dev-panel">
         <div class="container ms_box-text">
           <h2>Deploy and scale seamlessly</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -245,7 +214,7 @@
       <!-- Panel-dev Carousel - inizio -->
 
       <!-- Features - inizio sezione -->
-      <section class="ms_box ms_features">
+      <section id="ms_features" class="ms_box ms_features">
         <div class="ms_box-text">
           <h2>The features your business needs</h2>
         </div>
@@ -283,7 +252,7 @@
       <!-- Features - fine sezione -->
 
       <!-- Regions - inizio sezione -->
-      <section class="ms_box ms_blue-banner">
+      <section id="ms_regions" class="ms_box ms_blue-banner">
         <div class="ms_box-text ms_reg-text">
           <h2>Service your customers around the world from 12 regions.</h2>
         </div>
@@ -473,41 +442,8 @@
       </section>
       <!-- Regions - fine sezione -->
 
-      <!-- <ul class="ms_list-regions list-unstyled">
-        <li class="ms_list">
-          <div class="ms_sigla">AMS2</div>
-          <span class="ms_reg">Amsterdam, Netherlands</span>
-          <a href="#">Test speed ></a>
-        </li>
-        <li class="ms_list">
-          <div class="ms_sigla">AMS3</div>
-          <span class="ms_reg">Amsterdam, Netherlands</span>
-          <a href="#">Test speed ></a>
-        </li>
-        <li class="ms_list">
-          <div class="ms_sigla">BLR1</div>
-          <span class="ms_reg">Bangalore, India</span>
-          <a href="#">Test speed ></a>
-        </li>
-        <li class="ms_list">
-          <div class="ms_sigla">FRA1</div>
-          <span class="ms_reg">Frankfurt, German</span>
-          <a href="#">Test speed ></a>
-        </li>
-        <li class="ms_list">
-          <div class="ms_sigla">LON1</div>
-          <span class="ms_reg">London, UK</span>
-          <a href="#">Test speed ></a>
-        </li>
-        <li class="ms_list">
-          <div class="ms_sigla">NYC1</div>
-          <span class="ms_reg">New York, USA</span>
-          <a href="#">Test speed ></a>
-        </li>
-      </ul> -->
-
       <!-- Customer-reviews Carousel - inizio -->
-      <section class="ms_box ms_dev-panel">
+      <section id="ms_reviews-panel" class="ms_box ms_dev-panel">
         <div class="container ms_box-text">
           <h2>Development teams love DigitalOcean</h2>
         </div>
@@ -521,13 +457,14 @@
               <div class="col-md-6 col-lg-6">
                 <div class="ms_reviews">
                   <div class="ms_rev-logo">
-                    Immagine logo
+                    <img src="img/rockerbox-logo-51462da2.png" alt="rockerbox-logo">
                   </div>
-                  <div class="ms_box-card">
+                  <div class="ms_box-card ms_box-card-reviews">
                     <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
                     <div class="ms_rev-box">
-                      <h2>Predictable pricing</h2>
-                      <a class="ms_redirect-link" href="#">Pricing ></a>
+                      <h2>Rick O'Toole</h2>
+                      <p>Co-founder and CTO</p>
+                      <a class="ms_redirect-link" href="#">Read story ></a>
                     </div>
                   </div>
                 </div>
@@ -551,7 +488,7 @@
       <!-- Customer-reviews Carousel - fine -->
 
       <!-- Banner-two - inizio-->
-      <section class="ms_box ms_blue-banner">
+      <section id="banner-two" class="ms_box ms_blue-banner">
         <div class="ms_bottom-banner">
           <div class="ms_box-text ms_reg-text ms_bottom-banner-text">
             <h2>Get started now.</h2>
