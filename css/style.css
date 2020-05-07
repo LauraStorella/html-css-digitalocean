@@ -214,8 +214,14 @@ components {}
     padding-left: 60px;
     padding-right: 200px;
   }
+  .ms_list {
+    position: relative;
+  }
   .ms_blue-banner a {
     color: #00d7d2;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
   }
 
   @media all and (min-width: 767px) and (max-width: 991px) {
