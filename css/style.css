@@ -118,6 +118,16 @@ components {}
     color: #5c6a88;
     font-size: 20px;
   }
+  .ms_box .ms_process-steps {
+    border-left: 1px solid gray;
+    color: #828ca2;
+  }
+  .ms_box .ms_process-steps li {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #828ca2;
+  }
   .ms_box-card {
     padding: 20px 0;
   }
@@ -171,6 +181,41 @@ components {}
     .ms_dev-panel .ms_carousel i.ms_left,
     .ms_dev-panel .ms_carousel i.ms_right {
       display: none;
+    }
+  }
+
+  /* Regions */
+  .ms_regions {
+    background-color: #0042c0;
+  }
+  .ms_regions .ms_list-regions {
+    color: white;
+  }
+  .ms_regions .ms_list-regions li {
+    border-bottom: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .ms_regions span.ms_sigla {
+    font-weight: bold;
+  }
+  .ms_regions .ms_reg-text h2 {
+    color: white;
+  }
+  .ms_regions span.ms_reg {
+    padding-left: 60px;
+    padding-right: 200px;
+  }
+  .ms_regions a {
+    color: #00d7d2;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  @media all and (min-width: 767px) and (max-width: 991px) {
+    .ms_list-regions {
+      padding-bottom: 20px;
     }
   }
 
