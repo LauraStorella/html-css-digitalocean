@@ -117,18 +117,38 @@ nav {}
   .ms_navbar .ms_logo img {
     width: 100%;
   }
-  .ms_navbar .ms_navbar-toggler {
-    color: blue;
+  nav.ms_navbar li {
+    padding-right: 20px;
+  }
+  nav.ms_navbar li:last-child {
+    padding-right: 0;
+  }
+  nav.ms_navbar li a {
+    color: #061e50;
+  }
+  nav.ms_navbar .ms_btn {
+    display: inline;
+    color: #1f7cff;
+    border-color: #1f7cff;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  nav.ms_navbar i.ms_navbar-toggler {
     display: none;
   }
 
-  @media all and (min-width: 300px) and (max-width: 991px) {
-    .ms_navbar .ms_navbar-menu-one,
-    .ms_navbar .ms_navbar-menu-two {
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    nav.ms_navbar .ms_navbar-menu-one,
+    nav.ms_navbar .ms_navbar-menu-two {
       display: none;
     }
-    .ms_navbar .ms_navbar-toggler {
+    nav.ms_navbar i.ms_navbar-toggler {
       display: inline-block;
+      font-size: 30px;
+      color: #3a8aff;
     }
   }
 /* NAVBAR - end rules */
