@@ -195,33 +195,30 @@ components {}
   .ms_blue-banner {
     background-color: #0042c0;
   }
-  .ms_blue-banner ul.ms_list-regions {
+  .ms_blue-banner .ms_table-regions {
     color: white;
     margin-bottom: 0;
-  }
-  .ms_blue-banner .ms_list-regions li {
-    border-bottom: 1px solid white;
-    padding-top: 15px;
-    padding-bottom: 5px;
-  }
-  .ms_blue-banner span.ms_sigla {
-    font-weight: bold;
   }
   .ms_blue-banner .ms_reg-text h2 {
     color: white;
   }
-  .ms_blue-banner span.ms_reg {
-    padding-left: 60px;
-    padding-right: 200px;
+  .ms_reg-row {
+    border-bottom: 1px solid white;
+    height: 40px;
+    line-height: 40px;
   }
-  .ms_list {
-    position: relative;
+  .ms_blue-banner span.ms_sigla,
+  .ms_blue-banner span.ms_reg {
+    color: white;
+  }
+  .ms_blue-banner .ms_sigla {
+    font-weight: bold;
   }
   .ms_blue-banner a {
     color: #00d7d2;
-    position: absolute;
-    right: 20px;
-    bottom: 0;
+  }
+  .ms_blue-banner .ms_speed {
+    text-align: right;
   }
 
   @media all and (min-width: 767px) and (max-width: 991px) {
