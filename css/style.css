@@ -34,6 +34,13 @@ general-rules {}
     display: table;
     clear: both;
   }
+
+  .transform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 /* GENERAL RULES - end */
 
 /* COMPONENTS - start rules */
@@ -185,32 +192,30 @@ components {}
   }
 
   /* Regions */
-  .ms_regions {
+  .ms_blue-banner {
     background-color: #0042c0;
   }
-  .ms_regions .ms_list-regions {
+  .ms_blue-banner ul.ms_list-regions {
     color: white;
+    margin-bottom: 0;
   }
-  .ms_regions .ms_list-regions li {
-    border-bottom: 1px solid white;
+  .ms_blue-banner .ms_list-regions li {
+    border-top: 1px solid white;
     padding-top: 15px;
     padding-bottom: 5px;
   }
-  .ms_regions span.ms_sigla {
+  .ms_blue-banner span.ms_sigla {
     font-weight: bold;
   }
-  .ms_regions .ms_reg-text h2 {
+  .ms_blue-banner .ms_reg-text h2 {
     color: white;
   }
-  .ms_regions span.ms_reg {
+  .ms_blue-banner span.ms_reg {
     padding-left: 60px;
     padding-right: 200px;
   }
-  .ms_regions a {
+  .ms_blue-banner a {
     color: #00d7d2;
-    position: relative;
-    top: 0;
-    right: 0;
   }
 
   @media all and (min-width: 767px) and (max-width: 991px) {
@@ -218,6 +223,40 @@ components {}
       padding-bottom: 20px;
     }
   }
+
+  /* Customer-reviews */
+  .ms_reviews {
+    background-color: white;
+    height: 400px;
+  }
+  .ms_reviews .ms_rev-logo {
+    text-align: center;
+    width: 50%;
+    height: 50px;
+  }
+
+  /* Banner-two */
+  .ms_blue-banner .ms_bottom-banner {
+    width: 500px;
+    margin: auto;
+  }
+  .ms_box-text.ms_reg-text.ms_bottom-banner-text {
+    padding-bottom: 20px;
+  }
+  .ms_btn-banner {
+    text-align: center;
+    width: 500px;
+  }
+  .ms_blue-banner .ms_btn-blue.ms_btn-account {
+    background-color: white;
+    color: #006aff;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    padding: 10px 10px;
+  }
+
+
 
 
 
