@@ -139,7 +139,6 @@ nav {}
     display: none;
   }
 
-
   @media all and (min-width: 768px) and (max-width: 1199px) {
     nav.ms_navbar .ms_navbar-menu-one,
     nav.ms_navbar .ms_navbar-menu-two {
@@ -149,6 +148,9 @@ nav {}
       display: inline-block;
       font-size: 30px;
       color: #3a8aff;
+      position: absolute;
+      right: 0;
+      top: -50px;
     }
   }
 /* NAVBAR - end rules */
